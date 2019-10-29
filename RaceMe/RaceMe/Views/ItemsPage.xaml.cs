@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
 
 using RaceMe.Models;
 using RaceMe.Views;
@@ -50,6 +51,34 @@ namespace RaceMe.Views
 
             if (viewModel.Items.Count == 0)
                 viewModel.LoadItemsCommand.Execute(null);
+        }
+
+
+        async void btnLocation_Clicked(object sender, System.EventArgs e)
+        {
+            try
+            {
+                var location = await Geolocation.GetLastKnownLocationAsync();
+
+                if (location != null)
+                {
+                    lblLatitude.Text = "Latitude: " + location.Latitude.ToString();
+                    lblLongitude.Text = "Longitude:" + location.Longitude.ToString();
+                }
+            }
+            catch (FeatureNotSupportedException fnsEx)
+            {
+                await DisplayAlert("Faild", fnsEx.Message, "OK");
+            }
+            catch (PermissionException pEx)
+            {
+                await DisplayAlert("Faild", pEx.Message, "OK");
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Faild", ex.Message, "OK");
+            }
+
         }
     }
 }
