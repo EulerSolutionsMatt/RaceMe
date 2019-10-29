@@ -34,6 +34,7 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
+* [Homework](#homework)
 <!--
 * [Usage](#usage)
 * [Roadmap](#roadmap)
@@ -78,5 +79,13 @@ https://visualstudio.microsoft.com/xamarin/
 Click Clone or Checkout Code
 Copy repo URL into Repository Location field and click Clone
 ##### 3. Open Solution & Run App on Emulator
+
+<!-- HOMEWORK -->
+## Homework
+#### Due date 2019/10/29
+- [ ] Clone the repo & get it working.
+- [ ] Push changes to repo
+- [ ] Clean up & comment your code.
+- [ ] Record 2 basic next steps for the project eg. Add Navigation Menu & Add Placeholder pages .
 
 
