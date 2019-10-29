@@ -82,7 +82,7 @@ Copy repo URL into Repository Location field and click Clone
 
 <!-- HOMEWORK -->
 ## Homework
-#### Due date 2019/10/29
+#### Due date 2019/10/30
 - [ ] Clone the repo & get it working.
 - [ ] Push changes to repo
 - [ ] Clean up & comment your code.
