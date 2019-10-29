@@ -47,15 +47,11 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 Race Me - Hybrid App
 Hybrid Mobile Fitness app. Allows user to select a distance and then generates several circular routes that both start and end at their current location. Users are able to select one of these generated routes and have their data recorded along the way. The selected route along with the users data is saved when the route is completed. Users can then go back to routes they have run previously and run against themseleves (their ghost) in realtime, TM Nations style. Eventually users will be able to view other people routes and run against them, and set times on their routes etc.
 
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [C#](https://getbootstrap.com)
 * [Xamarin](https://visualstudio.microsoft.com/xamarin/)
 
