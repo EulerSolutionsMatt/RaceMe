@@ -11,7 +11,7 @@
   <h3 align="center">RaceMe Xamarin Forms App</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A mobile route calculating application.
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
@@ -34,12 +34,14 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
+<!--
 * [Usage](#usage)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
+-->
 
 
 
