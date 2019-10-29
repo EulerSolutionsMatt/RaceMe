@@ -20,6 +20,7 @@ namespace RaceMe
         protected override void OnStart()
         {
             // Handle when your app starts
+            // This is a change.
         }
 
         protected override void OnSleep()
