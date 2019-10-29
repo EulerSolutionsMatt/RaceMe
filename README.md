@@ -71,9 +71,7 @@ To get a local copy up and running follow these simple example steps.
 
 This is an example of how to list things you need to use the software and how to install them.
 ##### 1. Install Visual Studio Tools for Xamarin
-
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
-⋅⋅⋅https://visualstudio.microsoft.com/xamarin/
+https://visualstudio.microsoft.com/xamarin/
 ##### 2. Locate and install the workload : 'Mobile Development with .net' under the Mobile and Gaming Section
 
 
@@ -81,8 +79,8 @@ This is an example of how to list things you need to use the software and how to
 
 ##### 1. Open Visual Studio
 ##### 2. Clone the repo
-⋅⋅⋅Click Clone or Checkout Code
-⋅⋅⋅Copy repo URL into Repository Location field and click Clone
+Click Clone or Checkout Code
+Copy repo URL into Repository Location field and click Clone
 ##### 3. Open Solution & Run App on Emulator
 
 
