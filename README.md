@@ -82,10 +82,35 @@ Copy repo URL into Repository Location field and click Clone
 
 <!-- HOMEWORK -->
 ## Homework
-#### Due date 2019/10/30
-- [ ] Clone the repo & get it working.
-- [ ] Push changes to repo
-- [ ] Clean up & comment your code.
-- [ ] Record 2 basic next steps for the project eg. Add Navigation Menu & Add Placeholder pages .
+#### Due date 2019/11/06
+##### Damian
+- [ ] Add img to Assets folder in repo
+- [ ] Add google hangout link to repo
+- [ ] Add base pages
+- [ ] Design app icon
+- [ ] Remove extra stuff from repo
+- [ ] Add 2 steps moving forward
+##### Duncan
+- [ ] Refactor documentation
+- [ ] Add native firebase email authentication
+- [ ] Wire a login screen to use the authentication
+- [ ] Add 2 steps moving forward
+##### Matt
+- [ ] Move code into a Location class
+- [ ] Comment code
+- [ ] Plot a route on a map
+- [ ] Track location
+- [ ] Add 2 steps moving forward
+
+
+
+
+
+
+
+
+
+
+
 
 
