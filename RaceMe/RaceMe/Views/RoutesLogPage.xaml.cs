@@ -10,17 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace RaceMe.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage : MasterDetailPage
+    public partial class RoutesLogPage : ContentPage
     {
-        public MainPage()
+        public RoutesLogPage()
         {
             InitializeComponent();
         }
-
-        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        { 
-            
-        }
-           
     }
 }

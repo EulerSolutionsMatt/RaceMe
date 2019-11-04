@@ -4,28 +4,109 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="RaceMe.Views.MenuPage"
-             Title="Menu">
-             
-    <StackLayout VerticalOptions="FillAndExpand">
-        <ListView x:Name="ListViewMenu"
-                    HasUnevenRows="True">
-            <d:ListView.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>Item 1</x:String>
-                    <x:String>Item 2</x:String>
-                </x:Array>
-            </d:ListView.ItemsSource>
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Grid Padding="10">
-                            <Label Text="{Binding Title}" d:Text="{Binding .}" FontSize="20"/>
-                        </Grid>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </StackLayout>
+             x:Class="RaceMe.Views.MenuPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="{StaticResource MainColor}">
+            <StackLayout BackgroundColor="{StaticResource LightMainColor}" 
+                         HorizontalOptions="Fill" 
+                         HeightRequest="160">
+                <StackLayout Orientation="Horizontal"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Image Source="C:\Users\Watshisname\Pictures\Race me\User.png" 
+                       HorizontalOptions="Center" 
+                       HeightRequest="80" WidthRequest="80"
+                       />
+                    <StackLayout Orientation="Vertical" Margin="15,0,0,0">
+                        <Label x:Name="lblUserName" Text="User Name" 
+                           TextColor="{StaticResource TextColor}" 
+                           FontAttributes="Bold"
+                           FontSize="30" />
+                        <Label x:Name="lblLocation" Text="Current Location" 
+                           TextColor="{StaticResource TextColor}"
+                           FontAttributes="None"
+                           FontSize="17" />
+                    </StackLayout>
+                </StackLayout>                
+            </StackLayout>
+            <StackLayout 
+                VerticalOptions="FillAndExpand" 
+                HorizontalOptions="Fill" 
+                >
+                <StackLayout 
+                    x:Name="btnMyRoutes"
+                    HorizontalOptions="Fill" 
+                    HeightRequest="45" 
+                    Margin="0,20,0,0">
+                    <Image Source=""/>
+                    <Label
+                        Text="My Routes"
+                        TextColor="{StaticResource TextColor}"
+                        FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                        Scale="2.5"/>
 
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped=""/>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout 
+                    x:Name="btnNewRoute"
+                    HorizontalOptions="Fill" 
+                    HeightRequest="45" 
+                    Margin="0,20,0,0">
+                    <Image Source=""/>
+                    <Label
+                        Text="New Route"
+                        TextColor="{StaticResource TextColor}"
+                        FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                        Scale="2.5"/>
+
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped=""/>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout 
+                    x:Name="btnSettings"
+                    HorizontalOptions="Fill" 
+                    HeightRequest="45" 
+                    Margin="0,20,0,0">
+                    <Image Source=""/>
+                    <Label
+                        Text="Settings"
+                        TextColor="{StaticResource TextColor}"
+                        FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                        Scale="2.5"/>
+
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped=""/>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+
+
+            </StackLayout>
+            <StackLayout
+                VerticalOptions="End"
+                Orientation="Horizontal"
+                HorizontalOptions="CenterAndExpand">
+                <Image Source="">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped=""/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped=""/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped=""/>
+                    </Image.GestureRecognizers>
+                </Image>
+                
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

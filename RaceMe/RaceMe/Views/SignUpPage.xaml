@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="RaceMe.Views.SignUpPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout BackgroundColor="{StaticResource MainColor}" HorizontalOptions="Fill" VerticalOptions="Start" HeightRequest="160">
+                <Label Text="Sign Up " TextColor="{StaticResource TextColor}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Scale="3"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label 
+                    Text="Email : "
+                    TextColor="{StaticResource OffTextColor}"
+                    HorizontalOptions="Center"/>
+                <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource MainColor}" >
+                    <Image Source="" WidthRequest="40"/>
+                    <Entry
+                    Placeholder="johndoe@mail.com"
+                    PlaceholderColor="{StaticResource OffTextColor}"
+                    Keyboard="Email" 
+                    TextColor="{StaticResource TextColor}" 
+                    BackgroundColor="{StaticResource MainColor}"
+                    HorizontalOptions="Center"
+                    WidthRequest="350"
+                    VerticalOptions="Start"
+                    />
+                </StackLayout>
+                <Label 
+                    Text="Password : "
+                    TextColor="{StaticResource OffTextColor}"
+                    HorizontalOptions="Center"/>
+                <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource MainColor}">
+                    <Image Source="" WidthRequest="40"/>
+                    <Entry 
+                    Placeholder="Password"
+                    PlaceholderColor="{StaticResource OffTextColor}"
+                    IsPassword="True"
+                    TextColor="{StaticResource TextColor}" 
+                    BackgroundColor="{StaticResource MainColor}"
+                    HorizontalOptions="Center"
+                    WidthRequest="350"
+                    VerticalOptions="Start"/>
+                </StackLayout>
+                <Label 
+                    Text="Confirm Password : "
+                    TextColor="{StaticResource OffTextColor}"
+                    HorizontalOptions="Center"/>
+                <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource MainColor}">
+                    <Image Source="" WidthRequest="40"/>
+                    <Entry 
+                    Placeholder="Confirm Password"
+                    PlaceholderColor="{StaticResource OffTextColor}"
+                    IsPassword="True"
+                    TextColor="{StaticResource TextColor}" 
+                    BackgroundColor="{StaticResource MainColor}"
+                    HorizontalOptions="Center"
+                    WidthRequest="350"
+                    VerticalOptions="Start"/>
+                </StackLayout>
+                <Button Margin="0,50,0,20"
+                    BorderColor="{StaticResource MainColor}" 
+                    BorderWidth="2" 
+                    BackgroundColor="{StaticResource TextColor}" 
+                    Text="Sign Up" 
+                    TextColor="{StaticResource MainColor}"
+                    HorizontalOptions="Center"
+                    WidthRequest="350"
+                    VerticalOptions="Start"
+                    CornerRadius="10"/>
+                <StackLayout 
+                    Orientation="Horizontal" 
+                    HorizontalOptions="CenterAndExpand" 
+                    BackgroundColor="{StaticResource OffColor}" 
+                    Padding="0,20,0,0">
+                    <Label Text="Already Have an Account?" TextColor="{StaticResource OffTextColor}"/>
+                    <Label Text="Sign In" TextColor="{StaticResource MainColor}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="SignInClicked"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

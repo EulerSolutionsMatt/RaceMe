@@ -10,17 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace RaceMe.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage : MasterDetailPage
+    public partial class SignUpPage : ContentPage
     {
-        public MainPage()
+        public SignUpPage()
         {
             InitializeComponent();
         }
-
-        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        { 
-            
+        public void SignInClicked(object sender,EventArgs e)
+        {
+            Navigation.PopAsync();
+            Navigation.PushAsync(new SignInPage());
         }
-           
     }
 }
