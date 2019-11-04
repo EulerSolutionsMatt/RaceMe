@@ -57,6 +57,7 @@ Hybrid Mobile Fitness app. Allows user to select a distance and then generates s
 * [Xamarin](https://visualstudio.microsoft.com/xamarin/)
 
 <!-- Communication -->
+### Communication
 Weekly meetings will take place on google hangout every Wednesday at 9pm
 at: https://hangouts.google.com/call/-Au_vyKWYBfpQYYc80nBAEEI
 
