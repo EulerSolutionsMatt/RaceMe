@@ -56,7 +56,9 @@ Hybrid Mobile Fitness app. Allows user to select a distance and then generates s
 * [C#](https://getbootstrap.com)
 * [Xamarin](https://visualstudio.microsoft.com/xamarin/)
 
-
+<!-- Communication -->
+Weekly meetings will take place on google hangout every Wednesday at 9pm
+at: https://hangouts.google.com/call/-Au_vyKWYBfpQYYc80nBAEEI
 
 
 <!-- GETTING STARTED -->
@@ -107,8 +109,8 @@ Copy repo URL into Repository Location field and click Clone
 - Setup route CRUD
 - Generate a route based on a distance entered (can be a straight line or wateva)
 ##### Damian
--
--
+- Turn Gps location into an address (for displaying purposes)
+- Free run ??(creates a route off of an actual run)
 ##### Duncan
 -
 -
