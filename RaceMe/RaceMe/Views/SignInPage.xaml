@@ -18,6 +18,7 @@
                 <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource MainColor}">
                     <Image Source="" WidthRequest="40"/>
                     <Entry
+                    x:Name="txtEmail"
                     Placeholder="johndoe@mail.com"
                     PlaceholderColor="{StaticResource OffTextColor}"
                     Keyboard="Email" 
@@ -34,7 +35,8 @@
                     HorizontalOptions="Center"/>
                 <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource MainColor}">
                     <Image Source="" WidthRequest="40"/>
-                    <Entry 
+                    <Entry
+                    x:Name="txtPassword"
                     Placeholder="Password"
                     PlaceholderColor="{StaticResource OffTextColor}"
                     IsPassword="True"
@@ -42,7 +44,8 @@
                     BackgroundColor="{StaticResource MainColor}"
                     HorizontalOptions="Center"
                     WidthRequest="300"
-                    VerticalOptions="Start"/>
+                    VerticalOptions="Start"
+                    />
                 </StackLayout>
                 <Button 
                     x:Name="btnSignIn"
