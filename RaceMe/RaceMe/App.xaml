@@ -14,10 +14,6 @@
             <Color x:Key="TextColor">#FFFFFF</Color>
             <Color x:Key="OffTextColor">#808080</Color>
             <Color x:Key="LightMainColor">#8CC7F5</Color>
-            <Style TargetType="NavigationPage">
-                <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
-                <Setter Property="BarTextColor" Value="White" />
-            </Style>
         </ResourceDictionary>
     </Application.Resources>
     

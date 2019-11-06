@@ -7,18 +7,15 @@
 
   <ItemGroup>
     <Compile Remove="Models\**" />
-    <Compile Remove="Services\**" />
     <Compile Remove="ViewModels\**" />
     <EmbeddedResource Remove="Models\**" />
-    <EmbeddedResource Remove="Services\**" />
     <EmbeddedResource Remove="ViewModels\**" />
     <None Remove="Models\**" />
-    <None Remove="Services\**" />
     <None Remove="ViewModels\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FirebaseAdmin" Version="1.9.1" />
+    <PackageReference Include="FirebaseAuthentication.net" Version="3.3.0" />
     <PackageReference Include="FirebaseDatabase.net" Version="4.0.3" />
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
