@@ -113,8 +113,8 @@ Copy repo URL into Repository Location field and click Clone
 - Turn Gps location into an address (for displaying purposes)
 - Free run ??(creates a route off of an actual run)
 ##### Duncan
--
--
+- Add Facebook and Google login
+- Add Register User Functionality
 
 
 
