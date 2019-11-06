@@ -7,26 +7,32 @@
              x:Class="RaceMe.Views.LoginPage">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout BackgroundColor="{StaticResource MainColor}" HorizontalOptions="Fill" VerticalOptions="Start" HeightRequest="160">
+            <StackLayout BackgroundColor="{StaticResource MainColor}" HeightRequest="160" HorizontalOptions="Fill" VerticalOptions="Start" >
                 <!--<Label Text="Race Me " TextColor="White" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Scale="3"/>-->
                 <Image Source="C:\Users\Watshisname\Pictures\Race me\RaceMe_Logo.png" HorizontalOptions="Fill" HeightRequest="160"/>
             </StackLayout>
             <StackLayout VerticalOptions="CenterAndExpand">
-                <Button Text="Continue with Facebook" 
-                        TextColor="{StaticResource TextColor}"
-                        BackgroundColor="{StaticResource MainColor}"
-                        HorizontalOptions="Center"
-                        WidthRequest="350"
-                        VerticalOptions="Start"
-                        CornerRadius="10"/>
-                <Button Text="Continue with Google" 
-                        TextColor="{StaticResource TextColor}" 
-                        BackgroundColor="{StaticResource MainColor}"
-                        HorizontalOptions="Center"
-                        WidthRequest="350"
-                        VerticalOptions="Start"
-                        CornerRadius="10"
-                        Margin="0,10,0,0"/>
+                <Button 
+                    x:Name="btnFacebook"
+                    Text="Continue with Facebook" 
+                    TextColor="{StaticResource TextColor}"
+                    BackgroundColor="{StaticResource MainColor}"
+                    HorizontalOptions="Center"
+                    WidthRequest="350"
+                    VerticalOptions="Start"
+                    CornerRadius="10"
+                    Clicked="btnFacebook_Clicked"/>
+                <Button 
+                    x:Name="btnGoogle"
+                    Text="Continue with Google" 
+                    TextColor="{StaticResource TextColor}" 
+                    BackgroundColor="{StaticResource MainColor}"
+                    HorizontalOptions="Center"
+                    WidthRequest="350"
+                    VerticalOptions="Start"
+                    CornerRadius="10"
+                    Margin="0,10,0,0"
+                    Clicked="btnGoogle_Clicked"/>
                 <StackLayout Padding="0,20,0,0" BackgroundColor="{StaticResource OffColor}">
                     <BoxView Color="{StaticResource OffTextColor}" 
                              HorizontalOptions="Center" 
@@ -36,25 +42,27 @@
                            TextColor="{StaticResource OffTextColor}" 
                            HorizontalOptions="Center"/>
                 </StackLayout>
-                <Button BorderColor="{StaticResource MainColor}" 
-                        BorderWidth="2" 
-                        BackgroundColor="{StaticResource OffColor}" 
-                        Text="Sign Up" 
-                        TextColor="{StaticResource MainColor}"
-                        HorizontalOptions="Center"
-                        WidthRequest="350"
-                        VerticalOptions="Start"
-                        CornerRadius="10"
-                        Clicked="SignUpClicked"/>
+                <Button 
+                    x:Name="btnSignUp"
+                    BorderColor="{StaticResource MainColor}" 
+                    BorderWidth="2" 
+                    BackgroundColor="{StaticResource OffColor}" 
+                    Text="Sign Up" 
+                    TextColor="{StaticResource MainColor}"
+                    HorizontalOptions="Center"
+                    WidthRequest="350"
+                    VerticalOptions="Start"
+                    CornerRadius="10"
+                    Clicked="btnSignUp_Clicked"/>
                 <StackLayout 
                     Orientation="Horizontal" 
                     HorizontalOptions="CenterAndExpand" 
                     BackgroundColor="{StaticResource OffColor}" 
                     Padding="0,20,0,0">
                     <Label Text="Already Have an Account?" TextColor="{StaticResource OffTextColor}"/>
-                    <Label Text="Login" TextColor="{StaticResource MainColor}">
+                    <Label Text="Login" TextColor="{StaticResource MainColor}" x:Name="btnLogin">
                         <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="LoginClicked"/>
+                            <TapGestureRecognizer Tapped="btnLogin_Clicked"/>
                         </Label.GestureRecognizers>
                     </Label>
                 </StackLayout>

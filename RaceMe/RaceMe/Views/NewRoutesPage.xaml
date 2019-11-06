@@ -13,13 +13,12 @@
             <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                     <Entry 
-                    Text="13"
-                    Keyboard="Numeric"
-                    TextColor="{StaticResource MainColor}" 
-                    BackgroundColor="{StaticResource OffColor}"
-                    WidthRequest="100"
-                    FontSize="25"
-                    />
+                        Text="13"
+                        Keyboard="Numeric"
+                        TextColor="{StaticResource MainColor}" 
+                        BackgroundColor="{StaticResource OffColor}"
+                        WidthRequest="100"
+                        FontSize="25"/>
                     <Label 
                         Text="KM"
                         TextColor="{StaticResource MainColor}" 
@@ -28,13 +27,16 @@
                         Margin="10,10,0,0"
                         />
                 </StackLayout>
-                <Button Text="Find Routes" 
-                            TextColor="{StaticResource TextColor}"
-                            BackgroundColor="{StaticResource MainColor}"
-                            HorizontalOptions="Center"
-                            WidthRequest="350"
-                            VerticalOptions="Start"
-                            CornerRadius="10"/>
+                <Button 
+                    x:Name="btnFindRoute"
+                    Text="Find Routes" 
+                    TextColor="{StaticResource TextColor}"
+                    BackgroundColor="{StaticResource MainColor}"
+                    HorizontalOptions="Center"
+                    WidthRequest="350"
+                    VerticalOptions="Start"
+                    CornerRadius="10"
+                    Clicked="btnFindRoute_Clicked"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

@@ -16,10 +16,14 @@ namespace RaceMe.Views
         {
             InitializeComponent();
         }
-        public void SignInClicked(object sender,EventArgs e)
+        private void btnSignIn_Clicked(object sender,EventArgs e)
         {
             Navigation.PopAsync();
             Navigation.PushAsync(new SignInPage());
+        }
+        private void btnSignUp_Clicked(object sender,EventArgs e)
+        {
+            //TODO Creates account and stores in db , Navigates user to SignIn Page
         }
     }
 }

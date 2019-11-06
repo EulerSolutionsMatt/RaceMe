@@ -18,14 +18,14 @@
                 <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource MainColor}" >
                     <Image Source="" WidthRequest="40"/>
                     <Entry
-                    Placeholder="johndoe@mail.com"
-                    PlaceholderColor="{StaticResource OffTextColor}"
-                    Keyboard="Email" 
-                    TextColor="{StaticResource TextColor}" 
-                    BackgroundColor="{StaticResource MainColor}"
-                    HorizontalOptions="Center"
-                    WidthRequest="350"
-                    VerticalOptions="Start"
+                        Placeholder="johndoe@mail.com"
+                        PlaceholderColor="{StaticResource OffTextColor}"
+                        Keyboard="Email" 
+                        TextColor="{StaticResource TextColor}" 
+                        BackgroundColor="{StaticResource MainColor}"
+                        HorizontalOptions="Center"
+                        WidthRequest="350"
+                        VerticalOptions="Start"
                     />
                 </StackLayout>
                 <Label 
@@ -35,14 +35,14 @@
                 <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource MainColor}">
                     <Image Source="" WidthRequest="40"/>
                     <Entry 
-                    Placeholder="Password"
-                    PlaceholderColor="{StaticResource OffTextColor}"
-                    IsPassword="True"
-                    TextColor="{StaticResource TextColor}" 
-                    BackgroundColor="{StaticResource MainColor}"
-                    HorizontalOptions="Center"
-                    WidthRequest="350"
-                    VerticalOptions="Start"/>
+                        Placeholder="Password"
+                        PlaceholderColor="{StaticResource OffTextColor}"
+                        IsPassword="True"
+                        TextColor="{StaticResource TextColor}" 
+                        BackgroundColor="{StaticResource MainColor}"
+                        HorizontalOptions="Center"
+                        WidthRequest="350"
+                        VerticalOptions="Start"/>
                 </StackLayout>
                 <Label 
                     Text="Confirm Password : "
@@ -51,16 +51,18 @@
                 <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource MainColor}">
                     <Image Source="" WidthRequest="40"/>
                     <Entry 
-                    Placeholder="Confirm Password"
-                    PlaceholderColor="{StaticResource OffTextColor}"
-                    IsPassword="True"
-                    TextColor="{StaticResource TextColor}" 
-                    BackgroundColor="{StaticResource MainColor}"
-                    HorizontalOptions="Center"
-                    WidthRequest="350"
-                    VerticalOptions="Start"/>
+                        Placeholder="Confirm Password"
+                        PlaceholderColor="{StaticResource OffTextColor}"
+                        IsPassword="True"
+                        TextColor="{StaticResource TextColor}" 
+                        BackgroundColor="{StaticResource MainColor}"
+                        HorizontalOptions="Center"
+                        WidthRequest="350"
+                        VerticalOptions="Start"/>
                 </StackLayout>
-                <Button Margin="0,50,0,20"
+                <Button 
+                    x:Name="btnSignUp"
+                    Margin="0,50,0,20"
                     BorderColor="{StaticResource MainColor}" 
                     BorderWidth="2" 
                     BackgroundColor="{StaticResource TextColor}" 
@@ -69,16 +71,17 @@
                     HorizontalOptions="Center"
                     WidthRequest="350"
                     VerticalOptions="Start"
-                    CornerRadius="10"/>
+                    CornerRadius="10"
+                    Clicked="btnSignUp_Clicked"/>
                 <StackLayout 
                     Orientation="Horizontal" 
                     HorizontalOptions="CenterAndExpand" 
                     BackgroundColor="{StaticResource OffColor}" 
                     Padding="0,20,0,0">
                     <Label Text="Already Have an Account?" TextColor="{StaticResource OffTextColor}"/>
-                    <Label Text="Sign In" TextColor="{StaticResource MainColor}">
+                    <Label Text="Sign In" TextColor="{StaticResource MainColor}" x:Name="btnSignIn">
                         <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="SignInClicked"/>
+                            <TapGestureRecognizer Tapped="btnSignIn_Clicked"/>
                         </Label.GestureRecognizers>
                     </Label>
                 </StackLayout>

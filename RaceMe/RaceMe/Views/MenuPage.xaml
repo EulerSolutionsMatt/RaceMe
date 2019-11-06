@@ -45,7 +45,7 @@
                         Scale="2.5"/>
 
                     <StackLayout.GestureRecognizers>
-                        <TapGestureRecognizer Tapped=""/>
+                        <TapGestureRecognizer Tapped="btnMyRoutes_Clicked"/>
                     </StackLayout.GestureRecognizers>
                 </StackLayout>
                 <StackLayout 
@@ -62,7 +62,7 @@
                         Scale="2.5"/>
 
                     <StackLayout.GestureRecognizers>
-                        <TapGestureRecognizer Tapped=""/>
+                        <TapGestureRecognizer Tapped="btnNewRoute_Clicked"/>
                     </StackLayout.GestureRecognizers>
                 </StackLayout>
                 <StackLayout 
@@ -79,29 +79,30 @@
                         Scale="2.5"/>
 
                     <StackLayout.GestureRecognizers>
-                        <TapGestureRecognizer Tapped=""/>
+                        <TapGestureRecognizer Tapped="btnSettings_Clicked"/>
                     </StackLayout.GestureRecognizers>
                 </StackLayout>
 
 
             </StackLayout>
             <StackLayout
+                
                 VerticalOptions="End"
                 Orientation="Horizontal"
                 HorizontalOptions="CenterAndExpand">
-                <Image Source="">
+                <Image Source="" x:Name="btnFacebook">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped=""/>
+                        <TapGestureRecognizer Tapped="btnFacebook_Clicked"/>
                     </Image.GestureRecognizers>
                 </Image>
-                <Image Source="">
+                <Image Source="" x:Name="btnInstagram">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped=""/>
+                        <TapGestureRecognizer Tapped="btnInstagram_Clicked"/>
                     </Image.GestureRecognizers>
                 </Image>
-                <Image Source="">
+                <Image Source="" x:Name="btnTwitter">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped=""/>
+                        <TapGestureRecognizer Tapped="btnTwitter_Clicked"/>
                     </Image.GestureRecognizers>
                 </Image>
                 

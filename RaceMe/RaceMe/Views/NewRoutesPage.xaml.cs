@@ -16,5 +16,10 @@ namespace RaceMe.Views
         {
             InitializeComponent();
         }
+
+        private void btnFindRoute_Clicked(object sender, EventArgs e)
+        {
+            //TODO Navigate User to Avalible Routes Page
+        }
     }
 }

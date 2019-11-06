@@ -16,13 +16,22 @@ namespace RaceMe.Views
         {
             InitializeComponent();
         }
-        public void LoginClicked(object sender,EventArgs e){
+        private void btnLogin_Clicked(object sender,EventArgs e){
             Navigation.PushAsync(new SignInPage());
             
         }
-        public void SignUpClicked(object sender,EventArgs e)
+        private void btnSignUp_Clicked(object sender,EventArgs e)
         {
             Navigation.PushAsync(new SignUpPage());
+        }
+
+        private void btnFacebook_Clicked(object sender, EventArgs e)
+        {
+            //TODO Logs user in using facebook credentials
+        }
+        private void btnGoogle_Clicked(object sender, EventArgs e)
+        {
+            //TODO logs user in using google credentials
         }
     }
 }

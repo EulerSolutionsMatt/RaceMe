@@ -44,7 +44,9 @@
                     WidthRequest="300"
                     VerticalOptions="Start"/>
                 </StackLayout>
-                <Button Margin="0,50,0,20"
+                <Button 
+                    x:Name="btnSignIn"
+                    Margin="0,50,0,20"
                     BorderColor="{StaticResource MainColor}" 
                     BorderWidth="2" 
                     BackgroundColor="{StaticResource OffColor}" 
@@ -53,16 +55,17 @@
                     HorizontalOptions="Center"
                     WidthRequest="350"
                     VerticalOptions="Start"
-                    CornerRadius="10"/>
+                    CornerRadius="10"
+                    Clicked="btnSignIn_Clicked"/>
                 <StackLayout 
                     Orientation="Horizontal" 
                     HorizontalOptions="CenterAndExpand" 
                     BackgroundColor="{StaticResource OffColor}" 
                     Padding="0,20,0,0">
                     <Label Text="Don't Have an Account?" TextColor="{StaticResource OffTextColor}"/>
-                    <Label Text="Sign Up" TextColor="{StaticResource MainColor}">
+                    <Label Text="Sign Up" TextColor="{StaticResource MainColor}" x:Name="btnSignUp">
                         <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="SignUpClicked"/>
+                            <TapGestureRecognizer Tapped="btnSignUp_Clicked"/>
                         </Label.GestureRecognizers>
                     </Label>
                 </StackLayout>
