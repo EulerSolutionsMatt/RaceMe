@@ -109,6 +109,10 @@ Copy repo URL into Repository Location field and click Clone
 ##### Matt
 - Setup route CRUD
 - Generate a route based on a distance entered (can be a straight line or wateva)
+- Get a working Google maps API key
+- Get app working on actual android device.
+- Add app icon
+- Add a splash screen
 ##### Damian
 - Turn Gps location into an address (for displaying purposes)
 - Free run ??(creates a route off of an actual run)
