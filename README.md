@@ -83,6 +83,13 @@ Click Clone or Checkout Code
 Copy repo URL into Repository Location field and click Clone
 ##### 3. Open Solution & Run App on Emulator
 
+### Login Details
+
+##### Email
+Duncansmallwood@yahoo.com
+##### Password
+Password1
+
 <!-- HOMEWORK -->
 ## Homework
 #### Due date 2019/11/06
