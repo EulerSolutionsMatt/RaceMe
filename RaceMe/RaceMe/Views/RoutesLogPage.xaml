@@ -11,6 +11,10 @@
             <Label Text="List of routes completed will be displayed here"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <!-- Button to get users current location,
+                 put here for testing purposes, will be moved
+            -->
+            <Button Clicked="Get_Current_Location" Text="Get current location" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
