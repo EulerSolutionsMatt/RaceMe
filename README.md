@@ -121,6 +121,7 @@ Password1
 - Add app icon
 - Add a splash screen
 - Get a working google maps API key
+- Get images working
 ##### Damian
 - Turn Gps location into an address (for displaying purposes)
 - Free run ??(creates a route off of an actual run)
