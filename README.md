@@ -120,6 +120,8 @@ Password1
 - Get app working on actual android device.
 - Add app icon
 - Add a splash screen
+- Get a working google maps API key
+- Add location permissions to IOS
 ##### Damian
 - Turn Gps location into an address (for displaying purposes)
 - Free run ??(creates a route off of an actual run)
