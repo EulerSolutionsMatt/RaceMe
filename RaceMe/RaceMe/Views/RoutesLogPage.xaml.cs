@@ -22,8 +22,12 @@ namespace RaceMe.Views
         }
 
 
-        // Function to get user current location,
-        // Will be moved to Services/Location.cs
+        // ----------------- GET CURRENT LOCATION FUNCTION -----------------
+        /**
+         * Returns users current location in a Dictionary.
+         * 
+         * TODO: move function to Services/Location.cs
+         */
         async void Get_Current_Location(object sender, System.EventArgs e)
         {
             try
@@ -33,8 +37,6 @@ namespace RaceMe.Views
                 if (location != null)
                 {
                     // Add current GPS coords to CurrentLocation dictionary.
-                    // this should be refactored to a function that stores,
-                    // a dictionary of the current GPS coords
                     CurrentLocation.Add("latitude", location.Latitude.ToString());
                     CurrentLocation.Add("longitude", location.Longitude.ToString());
                     DisplayAlert("Success", CurrentLocation["latitude"], "Yay");
