@@ -123,6 +123,8 @@ Password1
 - Get a working google maps API key
 - Get images working
 - Since our repo is public, we need to add any files where the Google API key is visible, to gitIgnore
+- Show spinner when logging in
+- Flesh out a route card in the UI
 ##### Damian
 - Turn Gps location into an address (for displaying purposes)
 - Free run ??(creates a route off of an actual run)
