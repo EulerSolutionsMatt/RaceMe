@@ -122,6 +122,7 @@ Password1
 - Add a splash screen
 - Get a working google maps API key
 - Get images working
+- Since our repo is public, we need to add any files where the Google API key is visible, to gitIgnore
 ##### Damian
 - Turn Gps location into an address (for displaying purposes)
 - Free run ??(creates a route off of an actual run)
