@@ -3,18 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              mc:Ignorable="d"
-             x:Class="RaceMe.Views.RoutesLogPage">
+             x:Class="RaceMe.Views.RoutesLogPage"
+             >
     <ContentPage.Content>
         <StackLayout>
-            
-            <Label Text="List of routes completed will be displayed here"
+
+            <Label 
+                
+                Text="List of routes completed will be displayed here"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+
             <!-- Button to get users current location,
                  put here for testing purposes, will be moved
             -->
             <Button Clicked="Get_Current_Location" Text="Get current location" />
+
+            <!-- Basic Map -->
+            <maps:Map 
+                WidthRequest="320" 
+                HeightRequest="200"
+                x:Name="MyMap"
+                MapType="Street"
+            />
+            
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
