@@ -94,23 +94,35 @@ Password1
 ## Homework
 #### Due date 2019/11/06
 ##### Damian
-- [ ] Add img to Assets folder in repo
-- [ ] Add google hangout link to repo
-- [ ] Add base pages
+- [x] Add img to Assets folder in repo
+- [x] Add google hangout link to repo
+- [x] Add base pages
+- [x] Remove extra stuff from repo
+- [x] Add 2 steps moving forward
 - [ ] Design app icon
-- [ ] Remove extra stuff from repo
-- [ ] Add 2 steps moving forward
+- [ ] Add a app splash screen
+- [ ] Add app icon
+- [ ] Add little icons for forms and things
+- [ ] Research custom component
+
+
 ##### Duncan
-- [ ] Refactor documentation
-- [ ] Add native firebase email authentication
-- [ ] Wire a login screen to use the authentication
-- [ ] Add 2 steps moving forward
+- [x] Refactor documentation
+- [x] Add native firebase email authentication
+- [x] Wire a login screen to use the authentication
+- [x] Add 2 steps moving forward
+- [ ] Research naming object being stored in DB.
+- [ ] Look into Google Auth
+- [ ] Store a route programatically. Fields (title, time, distance)
+
 ##### Matt
-- [ ] Move code into a Location class
-- [ ] Comment code
+- [x] Add 2 steps moving forward
+- [x] Comment code
+- [ ] Create a location service
 - [ ] Plot a route on a map
 - [ ] Track location
-- [ ] Add 2 steps moving forward
+- [ ] Geocode coords
+
 
 #### Steps moving forward
 ##### Matt
