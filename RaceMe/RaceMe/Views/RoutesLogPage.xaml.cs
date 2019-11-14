@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using Xamarin.Forms.Maps;
 using Xamarin.Forms.Xaml;
 
 namespace RaceMe.Views
@@ -29,6 +30,11 @@ namespace RaceMe.Views
 
                 // get current user location
                 var current_location = await Geolocation.GetLastKnownLocationAsync();
+
+                // position map over users current location
+                MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(current_location.Latitude, current_location.Longitude),
+                                             Distance.FromMiles(1)));
+
 
                 // reverse geocode current_location 
                 var locations = await Geocoding.GetPlacemarksAsync(current_location.Latitude, current_location.Longitude);

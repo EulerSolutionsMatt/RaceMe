@@ -7,7 +7,7 @@ public class Location
     // 3. track current location
 
 
-	public Location()
+	public Location(double v)
 	{
 	}
 }
