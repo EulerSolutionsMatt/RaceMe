@@ -9,7 +9,6 @@
              >
     <ContentPage.Content>
         <StackLayout>
-
             <Label 
                 
                 Text="List of routes completed will be displayed here"
@@ -20,7 +19,7 @@
             <!-- Button to get users current location,
                  put here for testing purposes, will be moved
             -->
-            <Button Clicked="Get_Current_Location" Text="Get current location" />
+            <Button Clicked="Reverse_Geocode_Current_Location" Text="Reverse Geocode Current Location" />
 
             <!-- Basic Map -->
             <maps:Map 

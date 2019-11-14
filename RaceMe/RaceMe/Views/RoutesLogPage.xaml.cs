@@ -12,50 +12,63 @@ namespace RaceMe.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RoutesLogPage : ContentPage
     {
-
-        // Dictionary used to store current gps coords
-        Dictionary<string, string> CurrentLocation = new Dictionary<string, string>();
-
         public RoutesLogPage()
         {
             InitializeComponent();
         }
 
 
-        // ----------------- GET CURRENT LOCATION FUNCTION -----------------
+        // ----------------- GET & REVERSE GEOCODE CURRENT LOCATION -----------------
         /**
-         * Returns users current location in a Dictionary.
-         * 
-         * TODO: move function to Services/Location.cs
+         * Gets the users last known location &reverse geocode it into GPS coords
          */
-        async void Get_Current_Location(object sender, System.EventArgs e)
-        {
+        async void Reverse_Geocode_Current_Location(object sender, System.EventArgs e)
+        {  
             try
             {
-                var location = await Geolocation.GetLastKnownLocationAsync();
 
-                if (location != null)
+                // get current user location
+                var current_location = await Geolocation.GetLastKnownLocationAsync();
+
+                // reverse geocode current_location 
+                var locations = await Geocoding.GetPlacemarksAsync(current_location.Latitude, current_location.Longitude);
+                
+                // get the first location
+                var first_location = locations?.FirstOrDefault();
+
+                if (first_location != null)
                 {
-                    // Add current GPS coords to CurrentLocation dictionary.
-                    CurrentLocation.Add("latitude", location.Latitude.ToString());
-                    CurrentLocation.Add("longitude", location.Longitude.ToString());
-                    DisplayAlert("Success", CurrentLocation["latitude"], "Yay");
-                    DisplayAlert("Success", CurrentLocation["longitude"], "Yay");
+                    var geocodeAddress =
+                        $"AdminArea:       {first_location.AdminArea}\n" +
+                        $"CountryCode:     {first_location.CountryCode}\n" +
+                        $"CountryName:     {first_location.CountryName}\n" +
+                        $"FeatureName:     {first_location.FeatureName}\n" +
+                        $"Locality:        {first_location.Locality}\n" +
+                        $"PostalCode:      {first_location.PostalCode}\n" +
+                        $"SubAdminArea:    {first_location.SubAdminArea}\n" +
+                        $"SubLocality:     {first_location.SubLocality}\n" +
+                        $"SubThoroughfare: {first_location.SubThoroughfare}\n" +
+                        $"Thoroughfare:    {first_location.Thoroughfare}\n";
+
+                    await DisplayAlert("Alert", geocodeAddress, "OK");
                 }
+
             }
             catch (FeatureNotSupportedException fnsEx)
             {
-                await DisplayAlert("Faild", fnsEx.Message, "OK");
-            }
-            catch (PermissionException pEx)
-            {
-                await DisplayAlert("Faild", pEx.Message, "OK");
+                // Feature not supported on device
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Faild", ex.Message, "OK");
+                // Handle exception that may have occurred in geocoding
             }
 
+
+           
+
         }
+
+
+
     }
 }
