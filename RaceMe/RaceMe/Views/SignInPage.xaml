@@ -18,15 +18,15 @@
                 <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource MainColor}">
                     <Image Source="" WidthRequest="40"/>
                     <Entry
-                    x:Name="txtEmail"
-                    Placeholder="johndoe@mail.com"
-                    PlaceholderColor="{StaticResource OffTextColor}"
-                    Keyboard="Email" 
-                    TextColor="{StaticResource TextColor}" 
-                    BackgroundColor="{StaticResource MainColor}"
-                    HorizontalOptions="Center"
-                    WidthRequest="300"
-                    VerticalOptions="Start"
+                        x:Name="txtEmail"
+                        Placeholder="johndoe@mail.com"
+                        PlaceholderColor="{StaticResource OffTextColor}"
+                        Keyboard="Email" 
+                        TextColor="{StaticResource TextColor}" 
+                        BackgroundColor="{StaticResource MainColor}"
+                        HorizontalOptions="Center"
+                        WidthRequest="300"
+                        VerticalOptions="Start"
                     />
                 </StackLayout>
                 <Label 
