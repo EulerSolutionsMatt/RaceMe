@@ -122,7 +122,7 @@ Password1
 - [ ] Plot a route on a map
 - [ ] Track location
 - [ ] Geocode coords
-- [ ] Find out about google maps API key billing
+- [ ] Find out about google maps API key billing https://console.cloud.google.com/freetrial/signup/billing/ZA
 
 
 #### Steps moving forward
