@@ -122,6 +122,7 @@ Password1
 - [ ] Plot a route on a map
 - [ ] Track location
 - [ ] Geocode coords
+- [ ] Find out about google maps API key billing
 
 
 #### Steps moving forward
