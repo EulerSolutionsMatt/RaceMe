@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mr ="clr-namespace:MR.Gestures;assembly=MR.Gestures"
              mc:Ignorable="d"
              x:Class="RaceMe.Views.MenuPage"
              Title="Menu">
@@ -32,11 +33,13 @@
                 VerticalOptions="FillAndExpand" 
                 HorizontalOptions="Fill" 
                 >
-                <StackLayout 
+                <mr:StackLayout 
                     x:Name="btnMyRoutes"
                     HorizontalOptions="Fill" 
                     HeightRequest="45" 
-                    Margin="0,20,0,0">
+                    Margin="0,20,0,0"
+                    Down="btnMyRoutes_Clicked"
+                    Up="btnMyRoutes_Released">
                     <Image Source=""/>
                     <Label
                         Text="My Routes"
@@ -45,15 +48,17 @@
                         HorizontalOptions="CenterAndExpand"
                         Scale="2.5"/>
 
-                    <StackLayout.GestureRecognizers>
+                    <!--<StackLayout.GestureRecognizers>
                         <TapGestureRecognizer Tapped="btnMyRoutes_Clicked"/>
-                    </StackLayout.GestureRecognizers>
-                </StackLayout>
-                <StackLayout 
+                    </StackLayout.GestureRecognizers>-->
+                </mr:StackLayout>
+                <mr:StackLayout 
                     x:Name="btnNewRoute"
                     HorizontalOptions="Fill" 
                     HeightRequest="45" 
-                    Margin="0,20,0,0">
+                    Margin="0,20,0,0"
+                    Down="btnNewRoute_Clicked"
+                    Up="btnNewRoute_Released">
                     <Image Source=""/>
                     <Label
                         Text="New Route"
@@ -62,15 +67,17 @@
                         HorizontalOptions="CenterAndExpand"
                         Scale="2.5"/>
 
-                    <StackLayout.GestureRecognizers>
+                    <!--<StackLayout.GestureRecognizers>
                         <TapGestureRecognizer Tapped="btnNewRoute_Clicked"/>
-                    </StackLayout.GestureRecognizers>
-                </StackLayout>
-                <StackLayout 
+                    </StackLayout.GestureRecognizers>-->
+                </mr:StackLayout>
+                <mr:StackLayout 
                     x:Name="btnSettings"
                     HorizontalOptions="Fill" 
                     HeightRequest="45" 
-                    Margin="0,20,0,0">
+                    Margin="0,20,0,0"
+                    Down="btnSettings_Clicked"
+                    Up="btnSettings_Released">
                     <Image Source=""/>
                     <Label
                         Text="Settings"
@@ -79,10 +86,10 @@
                         HorizontalOptions="CenterAndExpand"
                         Scale="2.5"/>
 
-                    <StackLayout.GestureRecognizers>
+                    <!--<StackLayout.GestureRecognizers>
                         <TapGestureRecognizer Tapped="btnSettings_Clicked"/>
-                    </StackLayout.GestureRecognizers>
-                </StackLayout>
+                    </StackLayout.GestureRecognizers>-->
+                </mr:StackLayout>
 
 
             </StackLayout>
