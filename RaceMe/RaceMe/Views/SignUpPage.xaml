@@ -16,7 +16,7 @@
                     TextColor="{StaticResource OffTextColor}"
                     HorizontalOptions="Center"/>
                 <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource MainColor}" >
-                    <Image Source="" WidthRequest="40"/>
+                    <Image Source="emailIcon.png" WidthRequest="40" HorizontalOptions="Fill"/>
                     <Entry
                         Placeholder="johndoe@mail.com"
                         PlaceholderColor="{StaticResource OffTextColor}"
@@ -33,7 +33,7 @@
                     TextColor="{StaticResource OffTextColor}"
                     HorizontalOptions="Center"/>
                 <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource MainColor}">
-                    <Image Source="" WidthRequest="40"/>
+                    <Image Source="lockicon.png" WidthRequest="40" HorizontalOptions="Fill"/>
                     <Entry 
                         Placeholder="Password"
                         PlaceholderColor="{StaticResource OffTextColor}"
@@ -49,7 +49,7 @@
                     TextColor="{StaticResource OffTextColor}"
                     HorizontalOptions="Center"/>
                 <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource MainColor}">
-                    <Image Source="" WidthRequest="40"/>
+                    <Image Source="lockicon.png" WidthRequest="40" HorizontalOptions="Fill"/>
                     <Entry 
                         Placeholder="Confirm Password"
                         PlaceholderColor="{StaticResource OffTextColor}"

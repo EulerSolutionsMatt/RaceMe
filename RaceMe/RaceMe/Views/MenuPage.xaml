@@ -13,7 +13,7 @@
                          HorizontalOptions="Fill" 
                          HeightRequest="160">
                 <StackLayout Orientation="Horizontal"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                    <Image Source="C:\Users\Watshisname\Pictures\Race me\User.png" 
+                    <Image Source="UserIcon.png" 
                        HorizontalOptions="Center" 
                        HeightRequest="80" WidthRequest="80"
                        />
@@ -36,17 +36,19 @@
                 <mr:StackLayout 
                     x:Name="btnMyRoutes"
                     HorizontalOptions="Fill" 
+                    Orientation="Horizontal"
                     HeightRequest="45" 
                     Margin="0,20,0,0"
                     Down="btnMyRoutes_Clicked"
                     Up="btnMyRoutes_Released">
-                    <Image Source=""/>
+                    <Image Source="mapicon.png" WidthRequest="40" HorizontalOptions="Fill" Margin="15,0,0,0"/>
                     <Label
                         Text="My Routes"
                         TextColor="{StaticResource TextColor}"
                         FontAttributes="Bold"
                         HorizontalOptions="CenterAndExpand"
-                        Scale="2.5"/>
+                        Scale="2.5"
+                        Margin="0,20,0,0"/>
 
                     <!--<StackLayout.GestureRecognizers>
                         <TapGestureRecognizer Tapped="btnMyRoutes_Clicked"/>
@@ -55,17 +57,19 @@
                 <mr:StackLayout 
                     x:Name="btnNewRoute"
                     HorizontalOptions="Fill" 
+                    Orientation="Horizontal"
                     HeightRequest="45" 
                     Margin="0,20,0,0"
                     Down="btnNewRoute_Clicked"
                     Up="btnNewRoute_Released">
-                    <Image Source=""/>
+                    <Image Source="routeicon.png" WidthRequest="40" HorizontalOptions="Fill" Margin="15,0,0,0"/>
                     <Label
                         Text="New Route"
                         TextColor="{StaticResource TextColor}"
                         FontAttributes="Bold"
                         HorizontalOptions="CenterAndExpand"
-                        Scale="2.5"/>
+                        Scale="2.5"
+                        Margin="0,20,0,0"/>
 
                     <!--<StackLayout.GestureRecognizers>
                         <TapGestureRecognizer Tapped="btnNewRoute_Clicked"/>
@@ -74,17 +78,19 @@
                 <mr:StackLayout 
                     x:Name="btnSettings"
                     HorizontalOptions="Fill" 
+                    Orientation="Horizontal"
                     HeightRequest="45" 
                     Margin="0,20,0,0"
                     Down="btnSettings_Clicked"
                     Up="btnSettings_Released">
-                    <Image Source=""/>
+                    <Image Source="settingsicon.png" WidthRequest="40" HorizontalOptions="Fill" Margin="15,0,0,0"/>
                     <Label
                         Text="Settings"
                         TextColor="{StaticResource TextColor}"
                         FontAttributes="Bold"
                         HorizontalOptions="CenterAndExpand"
-                        Scale="2.5"/>
+                        Scale="2.5"
+                        Margin="0,20,0,0"/>
 
                     <!--<StackLayout.GestureRecognizers>
                         <TapGestureRecognizer Tapped="btnSettings_Clicked"/>
