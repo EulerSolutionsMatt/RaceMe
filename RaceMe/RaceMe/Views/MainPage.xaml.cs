@@ -15,6 +15,8 @@ namespace RaceMe.Views
         public MainPage()
         {
             InitializeComponent();
+            this.Master = new MenuPage();
+
         }
 
        

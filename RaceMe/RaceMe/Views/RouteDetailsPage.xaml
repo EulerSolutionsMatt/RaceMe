@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              mc:Ignorable="d"
              x:Class="RaceMe.Views.RouteDetailsPage">
     <ContentPage.Content>
@@ -13,6 +14,27 @@
             <Label Text="Displays Details about a completed route"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Label 
+                
+                Text="List of routes completed will be displayed here"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+
+            <!-- Button to get users current location,
+                 put here for testing purposes, will be moved
+            -->
+            <Button Clicked="Reverse_Geocode_Current_Location" Text="Reverse Geocode Current Location" />
+
+            <!-- Basic Map -->
+            <maps:Map 
+                WidthRequest="320" 
+                HeightRequest="200"
+                x:Name="MyMap"
+                MapType="Street"
+            />
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

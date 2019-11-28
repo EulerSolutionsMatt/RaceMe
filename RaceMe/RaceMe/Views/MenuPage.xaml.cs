@@ -21,7 +21,7 @@ namespace RaceMe.Views
             //TODO navigate user to RoutesLogPage
             btnMyRoutes.BackgroundColor = Color.FromHex("#6caefa");
 
-
+            ((MasterDetailPage)App.Current.MainPage).Detail.Navigation.PushAsync(new RouteDetailsPage());
         }
         private void btnMyRoutes_Released(object sender, MR.Gestures.DownUpEventArgs e)
         {
@@ -62,9 +62,5 @@ namespace RaceMe.Views
             //TODO Navigate user to RACEME Instagram page
         }
 
-        private void btnMyRoutes_Up(object sender, MR.Gestures.DownUpEventArgs e)
-        {
-
-        }
     }
 }
