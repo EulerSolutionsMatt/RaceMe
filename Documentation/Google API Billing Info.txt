@@ -1,0 +1,27 @@
+Google API Key
+
+
+Google Cloud Platform Free Tier
+12-month, $300 free trial
+
+Need billing for free tier:
+You have enabled billing for your account through the Google Cloud Platform Console.
+
+The 12-month, $300 free trial starts automatically when you set up your first billing account.
+You must provide credit card or bank details to set up a billing account and verify your identity, but you won't be charged during the free trial.
+
+Your free trial ends as soon as one of the following conditions is met:
+
+12 months have elapsed since you signed up.
+You've spent the $300 in credit.
+Your remaining credit and days are displayed at the top of the Google Cloud Platform Console during your free trial period.
+
+Even though you set up a billing account, you aren't charged unless you upgrade to a paid account
+
+No credit card?
+If you don't have a credit card, you can provide your bank account information instead, and if you opt to provide your bank account information:
+
+Google deposits a random fraction of a $1.00 USD dollar into your account, which might take 2 or 3 days.
+You use the deposited amount to finish the sign-up process.
+
+https://console.cloud.google.com/freetrial/signup/billing/ZA
