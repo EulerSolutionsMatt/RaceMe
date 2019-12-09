@@ -9,7 +9,7 @@
         <StackLayout>
             <StackLayout BackgroundColor="{StaticResource MainColor}" HeightRequest="160" HorizontalOptions="Fill" VerticalOptions="Start" >
                 <!--<Label Text="Race Me " TextColor="White" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Scale="3"/>-->
-                <Image Source="C:\Users\Watshisname\Pictures\Race me\RaceMe_Logo.png" HorizontalOptions="Fill" HeightRequest="160"/>
+                <Image Source="RaceMe_Logo.png" HorizontalOptions="Fill" HeightRequest="160"/>
             </StackLayout>
             <StackLayout VerticalOptions="CenterAndExpand">
                 <Button 

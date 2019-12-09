@@ -94,16 +94,12 @@ Password1
 ## Homework
 #### Due date 2019/11/06
 ##### Damian
-- [x] Add img to Assets folder in repo
-- [x] Add google hangout link to repo
-- [x] Add base pages
-- [x] Remove extra stuff from repo
-- [x] Add 2 steps moving forward
-- [ ] Design app icon
 - [ ] Add a app splash screen
-- [ ] Add app icon
 - [ ] Add little icons for forms and things
-- [ ] Research custom component
+- [ ] Create custom component
+- [ ] Api Billing test
+- [ ] Button Clicks on menu 
+- [ ] User image 
 
 
 ##### Duncan
@@ -122,6 +118,7 @@ Password1
 - [ ] Plot a route on a map
 - [ ] Track location
 - [ ] Geocode coords
+- [ ] Find out about google maps API key billing https://console.cloud.google.com/freetrial/signup/billing/ZA
 
 
 #### Steps moving forward

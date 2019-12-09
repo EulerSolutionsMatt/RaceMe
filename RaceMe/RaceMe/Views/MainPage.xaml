@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="RaceMe.Views.MainPage"
              xmlns:pages="clr-namespace:RaceMe.Views">
-    <MasterDetailPage.Master>
+    <!--<MasterDetailPage.Master>
         <pages:MenuPage x:Name="MasterPage" />
-    </MasterDetailPage.Master>
+    </MasterDetailPage.Master>-->
 </MasterDetailPage>

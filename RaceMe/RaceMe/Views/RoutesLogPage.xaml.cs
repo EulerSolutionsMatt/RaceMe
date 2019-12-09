@@ -1,4 +1,6 @@
-﻿using System;
+﻿using RaceMe.Classes;
+using RaceMe.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,71 +18,47 @@ namespace RaceMe.Views
         public RoutesLogPage()
         {
             InitializeComponent();
+            //List<Route> routeList = new List<Route>();
+            //routeList.Add(new Route(
+            //    "Route One",
+            //    new List<Location>() { new Location(15,25),
+            //        new Location(25,15)}
+            //    ,25,21));
+            //routeList.Add(new Route(
+            //    "Route Two",
+            //    new List<Location>() { new Location(15,25),
+            //        new Location(25,15)}
+            //    , 29, 12));
+            //routeList.Add(new Route(
+            //    "Route Three",
+            //    new List<Location>() { new Location(15,25),
+            //        new Location(25,15)}
+            //    , 75, 100));
+
+            //List<CompletedRouteView> viewList = new List<CompletedRouteView>();
+            //foreach (Route item in routeList)
+            //{
+            //    CompletedRouteView temp = new CompletedRouteView();
+            //    temp.RouteName = item.RouteName;
+            //    temp.Location = "Temp Location";
+            //    temp.BestTime = item.BestTime.ToString();
+            //    temp.Distance = item.RouteDistance.ToString();
+            //    viewList.Add(temp);
+            //}
+
+
+
+            CompletedRouteView temp = new CompletedRouteView();
+            temp.RouteName = "Route One ";
+            temp.Location = "Temp Location";
+            temp.BestTime = "25";
+            temp.Distance = "27";
+
+            mainLayout.Children.Add(temp);
         }
 
 
-        // ----------------- GET & REVERSE GEOCODE CURRENT LOCATION -----------------
-        /**
-         * Gets the users last known location &reverse geocode it into GPS coords
-         */
-        async void Reverse_Geocode_Current_Location(object sender, System.EventArgs e)
-        {
-            try
-            {
 
-                // get current user location
-                var current_location = await Geolocation.GetLastKnownLocationAsync();
-
-                // reverse geocode current_location 
-                var locations = await Geocoding.GetPlacemarksAsync(current_location.Latitude, current_location.Longitude);
-
-                // get the first location
-                var first_location = locations?.FirstOrDefault();
-
-                var geocodeAddress =
-                    $"AdminArea:       {first_location.AdminArea}\n" +
-                    $"CountryCode:     {first_location.CountryCode}\n" +
-                    $"CountryName:     {first_location.CountryName}\n" +
-                    $"FeatureName:     {first_location.FeatureName}\n" +
-                    $"Locality:        {first_location.Locality}\n" +
-                    $"PostalCode:      {first_location.PostalCode}\n" +
-                    $"SubAdminArea:    {first_location.SubAdminArea}\n" +
-                    $"SubLocality:     {first_location.SubLocality}\n" +
-                    $"SubThoroughfare: {first_location.SubThoroughfare}\n" +
-                    $"Thoroughfare:    {first_location.Thoroughfare}\n";
-
-                await DisplayAlert("Alert", geocodeAddress, "OK");
-
-
-                // add a pin on the map at the users current location
-                Pin pin = new Pin
-                {
-                    Type = PinType.Place,
-                    Position = new Position(current_location.Latitude, current_location.Longitude),
-                    Label = "Your Location",
-                    Address = geocodeAddress
-                };
-
-                MyMap.Pins.Add(pin);
-
-                // position map over users current location
-                MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(current_location.Latitude, current_location.Longitude),
-                                             Distance.FromMiles(1)));
-
-            }
-            catch (FeatureNotSupportedException fnsEx)
-            {
-                // Feature not supported on device
-            }
-            catch (Exception ex)
-            {
-                // Handle exception that may have occurred in geocoding
-            }
-
-
-
-
-        }
 
 
 

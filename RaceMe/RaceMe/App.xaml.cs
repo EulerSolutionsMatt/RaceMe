@@ -11,7 +11,14 @@ namespace RaceMe
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new LoginPage());
+            //MainPage = new NavigationPage(new LoginPage());
+
+            //
+            //By Passes Login taking straight to Main Page
+            //
+            MainPage mainPage = new MainPage();
+            mainPage.Detail = new NavigationPage(new RoutesLogPage());
+            App.Current.MainPage = mainPage;
         }
 
         protected override void OnStart()

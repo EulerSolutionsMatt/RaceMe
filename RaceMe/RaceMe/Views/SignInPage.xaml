@@ -16,17 +16,17 @@
                     TextColor="{StaticResource OffTextColor}"
                     HorizontalOptions="Center"/>
                 <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource MainColor}">
-                    <Image Source="" WidthRequest="40"/>
+                    <Image Source="emailIcon.png" WidthRequest="40" HorizontalOptions="Fill"/>
                     <Entry
-                    x:Name="txtEmail"
-                    Placeholder="johndoe@mail.com"
-                    PlaceholderColor="{StaticResource OffTextColor}"
-                    Keyboard="Email" 
-                    TextColor="{StaticResource TextColor}" 
-                    BackgroundColor="{StaticResource MainColor}"
-                    HorizontalOptions="Center"
-                    WidthRequest="300"
-                    VerticalOptions="Start"
+                        x:Name="txtEmail"
+                        Placeholder="johndoe@mail.com"
+                        PlaceholderColor="{StaticResource OffTextColor}"
+                        Keyboard="Email" 
+                        TextColor="{StaticResource TextColor}" 
+                        BackgroundColor="{StaticResource MainColor}"
+                        HorizontalOptions="Center"
+                        WidthRequest="300"
+                        VerticalOptions="Start"
                     />
                 </StackLayout>
                 <Label 
@@ -34,7 +34,7 @@
                     TextColor="{StaticResource OffTextColor}"
                     HorizontalOptions="Center"/>
                 <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource MainColor}">
-                    <Image Source="" WidthRequest="40"/>
+                    <Image Source="lockicon.png" WidthRequest="40" HorizontalOptions="Fill"/>
                     <Entry
                     x:Name="txtPassword"
                     Placeholder="Password"
